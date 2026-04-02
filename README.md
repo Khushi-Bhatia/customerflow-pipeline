@@ -154,47 +154,9 @@ http://localhost:8000/docs
 
 ---
 
-## 🧪 Testing
-
-### Test Flask:
-
-```
-curl http://localhost:5000/api/customers?page=1&limit=5
-```
-
-### Ingest Data:
-
-```
-curl -X POST http://localhost:8000/api/ingest
-```
-
-### Fetch Data:
-
-```
-curl http://localhost:8000/api/customers?page=1&limit=5
-```
-
----
-
-## ✅ Features Implemented
-
-* Paginated API (Flask & FastAPI)
-* Data ingestion pipeline
-* Upsert logic (insert/update)
-* PostgreSQL integration
-* Dockerized multi-service setup
-* Error handling (404, DB retry)
-
----
-
 ## 📌 Notes
 
 * Ensure `customers.json` contains **20+ records**
 * Run ingestion before fetching data from FastAPI
 * Docker must be running before executing commands
 
----
-
-## 👨‍💻 Author
-
-Backend Developer Assessment Submission
